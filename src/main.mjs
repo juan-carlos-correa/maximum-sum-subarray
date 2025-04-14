@@ -1,14 +1,10 @@
 /**
- * [Your function description here]
- * [Your parameters description here]
- * Example:
- * @param {string} str1
+ * Returns the maximum sum of any subarray of length k.
  *
- * [What the function returns]
- * Example:
- * @returns {boolean}
+ * @param {number[]} arr - Array of integers (can include negatives)
+ * @param {number} k - Size of the subarray
+ * @returns {number} - Maximum sum of any subarray of length k
  */
-export function myFunction(s1, s2) {
-  // TODO: implement
-  return false;
+export function maxSubarraySum(arr, k) {
+  // Your code here
 }

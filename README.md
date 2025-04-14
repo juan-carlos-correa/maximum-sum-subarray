@@ -1,59 +1,45 @@
-> 📄 **New here?** 👉 [See how to use this template →](./TEMPLATE-INSTRUCTIONS.md)
+# 🧠 Maximum Sum Subarray
 
-# 🧠 [EXERCISE TITLE HERE]
-
-_A quick one-liner describing the problem._  
-_Example: Check if two strings are anagrams._
+_Given an array of integers and a number `k`, return the maximum sum of a subarray of size `k`._
 
 ## ✍️ Your Task
 
-Your goal is to solve the coding challenge using a clear and efficient solution.
-
-1. Read the problem and input/output requirements
-2. Implement your solution in `src/main.mjs`
-3. Run tests with `npm run test` to validate your solution
+1. Read the problem and requirements carefully
+2. Write your implementation in `src/main.mjs`
+3. Test your solution with `npm run test`
 
 ## 📘 Description
 
-Describe the problem in detail.
+You are given an array of integers and a number `k`.
 
-Example:
+Your task is to find the maximum possible sum of any subarray of length `k`.
 
-Given two strings `s1` and `s2`, return `true` if `s2` is an anagram of `s1`, and `false` otherwise.
-
-An anagram is a word or phrase formed by rearranging the letters of a different word.
+The subarray must consist of **`k` consecutive elements**.
 
 ## 📥 Input
 
-- `s1`: a string (1 ≤ s1.length ≤ 10⁵)
-- `s2`: a string (1 ≤ s2.length ≤ 10⁵)
-- No spaces, only lowercase letters
+- `arr`: an array of integers (`1 <= arr.length <= 10⁵`, elements can be negative)
+- `k`: an integer representing the size of the subarray (`1 <= k <= arr.length`)
 
 ## 📤 Output
 
-- Returns `true` or `false`
+- Returns an integer representing the **maximum sum** of any subarray of length `k`.
 
 ## 🛠️ Instructions
 
-1. Open the file `src/main.mjs` and implement the solution.
-2. To verify your solution, run the tests in `src/main.test.js` using:
+1. Open the file `src/main.mjs` and implement the `maxSubarraySum` function.
+2. To verify your solution, run the tests in `test/main.test.js` using:
 
 ```bash
 npm run test
 ```
 
-> ✅ Do not modify the test file unless you’re adding extra edge cases.
+✅ Do not modify the test file unless you're adding extra edge cases.
 
 ## 💡 Tips
 
-_You can add any tips or hints that might help the user solve the problem._
-
-For example:
-
-- Use `.toLowerCase()` if needed
-- Use objects, arrays or `Map` to count character frequencies
-- Aim for O(n) time complexity if possible
-- Compare frequency maps or use one-pass counter
+- Avoid recalculating the sum of the entire window every time.
+- Aim for a **linear solution: O(n)**.
 
 ## 🧪 Run Tests
 
@@ -65,5 +51,3 @@ npm run test
 ```
 
 ✅ Make sure your implementation is in `src/main.mjs` and your tests in `src/main.test.js`.
-
-Happy coding! 🚀
